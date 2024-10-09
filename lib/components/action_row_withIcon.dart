@@ -21,12 +21,19 @@ class ActionRowWithIcon extends StatelessWidget {
           Container(
             width: 60,
             height: 40,
-            decoration: const BoxDecoration(
-              color: Color.fromARGB(31, 238, 44, 44),
-              borderRadius: BorderRadius.all(
-                  Radius.circular(8.0)), // Agrega el borde redondeado
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey[500]!,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 10,
+                  spreadRadius: 1.0 
+                ),
+              ], // Agrega el borde redondeado
             ),
-            child: Icon(Icons.arrow_right_alt_outlined, size: 20,),
+            child: Icon(Icons.arrow_right_alt_outlined, size: 40,),
           ),
         ],
       ),
